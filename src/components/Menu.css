@@ -1,0 +1,10 @@
+.menu__container{
+    position: absolute;
+    top: -310px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background: #89B9BB; /*old background: #9DCED1*/
+    border-bottom: 2px solid black;
+}

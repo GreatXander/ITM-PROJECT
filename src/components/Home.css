@@ -1,0 +1,258 @@
+.welcome__tag{
+    top: -10px;
+}
+
+.svg{
+    height: 60px;
+    width: 60px;
+    margin: 20px auto 0 auto;
+}
+
+.books__svg{
+    height: 80px;
+    width: 80px;
+}
+
+.eraser__svg{
+    height: 110px;
+    width: 110px;
+}
+
+.school__draw{
+    height: 250px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.public__container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1065px;
+}
+
+.public{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
+    width: 300px;
+    flex-grow: 0.83;
+    margin: 15px auto;
+    background: var(--div-color);
+    padding-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+.public__text{
+    font-size: 17px;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    margin-top: -5px;
+    padding: 16px 20px 10px 20px;
+    text-align: center;
+    overflow-wrap: anywhere;  
+}
+
+.public__division{
+    display: flex;
+    min-height: 15px;
+}
+
+.public__division-title{
+    margin: 8px auto 0 auto;
+    font-size: 30px;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.welcome__container{
+    max-width: 100%;
+}
+
+.welcome{
+    z-index: -100;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 0;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.35);
+    width: 100%;
+}
+
+.public__menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    max-width: 950px;
+    flex-grow: 0.8;
+    justify-content: space-evenly;
+}
+
+.public__menu-option{
+    display: flex;
+    flex-wrap: wrap;
+    height: 320px;
+    width: 220px;
+    margin: 15px 8px 30px 8px;
+    background: var(--div-color);
+    border: 3px solid black;
+    box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+}
+
+.public__menu-svg{
+    height: 170px;
+    width: 170px;
+    margin: 35px auto;
+}
+
+.public__link{
+    text-decoration: none;
+    margin: auto;
+}
+
+button{
+    cursor: pointer;
+    height: 45px;
+    width: 190px;
+    margin-bottom: 25px !important;
+    font-size: 15.5px !important;
+    color: white !important;
+    border-color: black !important;
+    border-width: 2px !important;
+}
+
+.us__button{
+    background: #43a0ce !important;
+}
+
+.offer__button{
+    background: #d13f3f !important;
+}
+
+.community__button{
+    background: #D9D047  !important;
+}
+
+.teachers__button{
+    background: #DD956C !important;
+}
+
+.library__button{
+    background: #8FC294 !important;
+}
+
+@media screen and  (max-width: 280px) /* For Galaxy Fold */{
+    .tag{
+        display: none;
+    }
+    .public__menu-option, .public__menu-last{
+        width: 260px !important;
+        border: 3px solid black;
+        margin: 15px auto;
+    }
+    .public__division-title{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 374px) /* For Iphone 5*/{
+    .tag{
+        height: 115px;
+        width: 115px;
+    }
+    .public__menu-option, .public__menu-last{
+        width: 300px !important;
+        margin: 15px auto;
+    }
+    .public__division-title{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .tag{
+        height: 120px;
+        width: 120px;
+    }
+    .public{
+        width: 100%;
+        margin: 15px 0;
+        border: none !important;
+        border-top: 3px solid black !important;
+        border-bottom: 3px solid black !important;
+        border-radius: 0;
+    }
+    .public__menu-option{
+        width: 205px;
+        border: 3px solid black;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 499px){
+    .public__menu-option{
+        width: 95% !important;
+        margin: 0 auto 30px auto;
+    }
+    button{
+        font-size: 20px !important;
+        height: 55px !important;
+        width: 250px !important;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 669px){
+    .public__menu-option{
+        width: 255px;
+        margin: 15px;
+    }
+} 
+
+@media screen and (min-width: 670px) and (max-width: 749px){
+    .public__menu-option{
+        width: 290px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .tag{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 844px){
+    .public__menu-option{
+        width: 345px;
+    }
+} 
+
+@media screen and (max-width: 749px){
+    .public__menu-last{
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1034px){
+    .public__menu-option{
+        width: 230px;
+    }
+}
+
+@media screen and (min-width: 1035px){
+    .public__menu-container{
+        justify-content: space-between;
+    }
+    .public__menu-option{
+        margin: 0 auto 15px auto;
+        width: 210px;
+        box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.35);
+    }
+    .public__menu-last{
+        margin: 15px auto 0 auto !important;
+        width: 450px !important;
+    }
+    .library__button{
+        width: 300px;
+    }
+}

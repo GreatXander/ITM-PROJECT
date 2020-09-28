@@ -1,0 +1,17 @@
+header{
+    position: relative;
+    display: flex;
+    height: 120px;
+    width: 100%;
+    background: #363434;
+    border-bottom: 4px solid black;
+    margin-bottom: -25px;
+    z-index: 100;
+}
+
+.school__logo{
+    height: 100px;
+    width: 100px;
+    margin: 10px 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,127 @@
+.login__main{
+    position: relative;
+    display: flex;
+    margin: 50px auto;
+    max-width: 700px;
+}
+
+.login__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
+    flex-grow: 0.8;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
+    padding-bottom: 15px;
+    background: #638D8E;
+}
+
+.login__header{
+    display: flex;
+    height: 230px;
+    width: 100%;
+    border-bottom: 3px solid;
+}
+
+.login__icon-container{
+    display: flex;
+    margin: auto;
+}
+
+.login__icon{
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+}
+
+.login__form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.login__title{
+    font-size: 35px;
+    margin: 20px auto;
+    color: white;
+}
+
+.login__input-container{
+    display: flex;
+    margin: 15px 0; 
+    height: 40px;
+    width: 100%;
+}
+
+.login__input{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 5px 5px 5px 10px;
+    /*background: #EFA8C0;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;*/
+}
+
+.login__error{
+    display: none; /* FLEX */
+    height: 44px;
+    width: 10%;
+    margin: auto;
+    background: #AB3232;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.error{
+    height: 40px;
+    width: 40px;
+    margin: auto;
+}
+
+.login__button{
+    height: 60px;
+    width: 400px;
+    margin: 25px auto 10px auto;
+    background: #527EB5;
+    color: white;
+    border: 3px solid white !important;
+    border-radius: 20px;
+    outline: none;
+}
+
+.login__button:hover{
+    background: #6693ca;
+}
+
+.login__footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 3px solid;
+}
+
+.footer__link-container{
+    display: flex;
+    margin: auto 0 auto 0;
+    height: 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.footer__link-container:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.login__footer-link{
+    font-size: 18px;
+    color: white;
+    margin: 10px auto;
+}
