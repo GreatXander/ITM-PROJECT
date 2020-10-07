@@ -3,15 +3,52 @@ header{
     display: flex;
     height: 120px;
     width: 100%;
-    background: #363434;
+    background: var(--black);
     border-bottom: 4px solid black;
     margin-bottom: -25px;
     z-index: 100;
+    justify-content: space-between;
 }
 
-.school__logo{
+.school__logo-container{
+    display: flex;
     height: 100px;
-    width: 100px;
-    margin: 10px 15px;
+    margin: auto 15px;
+    background: #2C2A2A;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding-right: 10px;
     cursor: pointer;
+}
+.school__logo-container:hover{
+    background: #4D4C4C;
+}
+.school__logo{
+    height: 90%;
+    width: 80px;
+    margin: auto 0 auto 8px;
+}
+.school__logo-title{
+    font-size: 33px;
+    color: white;
+    margin: auto 8px;
+}
+
+@media screen and (max-width: 700px){
+    .school__logo-title{
+        display: none;
+    }
+}
+@media screen and (min-width: 1210px) and (max-width: 1300px){
+    .profile__button{
+        right: 15px;
+    }
+}
+@media screen and (min-width: 1300px){
+    .school__logo-container{
+        margin-left: 25px;
+    }
+    .profile__button{
+        right: 25px;
+    }
 }

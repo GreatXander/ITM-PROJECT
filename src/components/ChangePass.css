@@ -1,0 +1,27 @@
+.change-pass__main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.change-pass__container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    margin: 50px auto;
+    background: var(--form-background);
+    border: 3px solid;
+}
+
+.change-pass__header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.change-pass__title{
+    margin: auto;
+    color: white;
+}

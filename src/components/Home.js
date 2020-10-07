@@ -24,11 +24,11 @@ export default class Home extends Component {
                 <div className="public welcome">
                     <SchoolDraw className="school__draw svg" />
                     <WelcomeTag className="welcome__tag tag" />
-                    {/*<p className="public__text">Te damos la bienvenida a la <strong>Institución de 
+                    <p className="public__text">Te damos la bienvenida a la <strong>Institución de 
                     Educación Media</strong> más importante y diversa de <strong> Santiago De Los Caballeros</strong>. 
                     <strong> Con más de 45 años de trayectoria, ITM ha sido un pilar fundamental</strong> en la 
                     formación de los <strong> técnicos-profesionales que necesita República Dominicana</strong>.
-                    </p>*/}
+                    </p>
                 </div>
             </div>
 
@@ -53,7 +53,8 @@ export default class Home extends Component {
             <div className="public__menu-container">
                 <div className="public__menu-option">
                     <Director className="public__menu-svg svg" />
-                    <Link to="/nosotros" className="public__link"><Button 
+                    <Link to="/nosotros" className="public__link" aria-label="Nosotros">
+                    <Button 
                     color="primary" 
                     variant="outlined"
                     className="us__button">
@@ -62,7 +63,8 @@ export default class Home extends Component {
 
                 <div className="public__menu-option">
                     <Pencil className="public__menu-svg svg" />
-                    <Link to="/oferta_academica" className="public__link"><Button 
+                    <Link to="/oferta_academica" className="public__link" aria-label="Ofertas"
+                    ><Button 
                     color="primary" 
                     variant="outlined"
                     className="offer__button">
@@ -71,7 +73,8 @@ export default class Home extends Component {
 
                 <div className="public__menu-option">
                     <Community className="public__menu-svg svg" />
-                    <Link to="/comunidad" className="public__link"><Button 
+                    <Link to="/comunidad" className="public__link" aria-label="Comunidad">
+                    <Button 
                     color="primary" 
                     variant="outlined"
                     className="community__button">
@@ -80,7 +83,8 @@ export default class Home extends Component {
 
                 <div className="public__menu-option">
                     <Rule className="public__menu-svg svg" />
-                    <Link to="/maestros" className="public__link"><Button 
+                    <Link to="/maestros" className="public__link" aria-label="Maestros">
+                    <Button 
                     color="primary" 
                     variant="outlined"
                     className="teachers__button">
@@ -89,7 +93,8 @@ export default class Home extends Component {
 
                 <div className="public__menu-option public__menu-last">
                     <BackPack className="public__menu-svg svg" />
-                    <Link to="/biblioteca" className="public__link"><Button 
+                    <Link to="/biblioteca" className="public__link" aria-label="Biblioteca">
+                    <Button 
                     color="primary" 
                     variant="outlined"
                     className="library__button">
@@ -141,52 +146,6 @@ export default class Home extends Component {
                     </p>
                 </div>
             </div>
-
-            {/*
-            <div className="home__container">
-                <div className="home__container-div">
-                    <div className="div__content">
-                        <StudentYellowSvg className="student-yellow__svg svg" />
-                        <p className="div__text">
-                        <strong>ITM busca la integración de las familias de toda la comunidad académica</strong> (estudiantes, egresados, 
-                        docentes y empleados) con el instituto, <strong>acercando las familias a las posibilidades que genera 
-                        la vida itemiana</strong>, el reconocimiento de la diversidad cultural, el aprovechamiento de escenarios 
-                        para la formación, la capacitación, la lúdica, la recreación y el arte, <strong>como escenarios que 
-                        aportan a la consolidación de un proyecto de vida</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="home__container">
-                <div className="home__container-div">
-                    <div className="div__content">
-                        <RuleSvg className="svg" />
-                        <p className="div__text">
-                        <strong>Nuestros maestros estan capacitados a nivel profesional</strong>, para 
-                        <strong> asegurar a los jóvenes un buen desarrollo en su aprendizaje</strong>, así 
-                        como tambien en sus valores y el área a la que se estarán dedicando. Contamos con <strong>
-                        maestros profesionales en 8 áreas distintas</strong>, como son: <strong>Informática, 
-                        Mecatrónica, Electrónica, Mecánica, Mercadeo, Contabilidad, Enfermería y Refrigeración</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="home__container">
-                <div className="home__container-div">
-                    <div className="div__content">
-                        <BackPack className="svg" />
-                        <p className="div__text">
-                        Nuestra biblioteca contiene <strong>items que serán de ayuda para nuestros estudiantes 
-                        durante todo su aprendizaje</strong>, la misma está alojada en un servidor externo del ministerio, 
-                        en donde el estudiante se registrará con sus datos y <strong>podrá acceder a los items a través 
-                        de un código, o con una búsqueda simple</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>*/}
             </>
         )
     }

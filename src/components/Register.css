@@ -1,61 +1,60 @@
-.login__main{
+.register__main{
     position: relative;
     display: flex;
     margin: auto;
     max-width: 700px;
 }
 
-.login__container{
+.register__container{
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 300px;
     margin: 50px auto;
     flex-grow: 0.8;
-    border: 3px solid;
-    border-radius: 20px;
+    border: 3px solid white;
     box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
     padding-bottom: 15px;
     background: var(--form-background);
 }
 
-.login__header{
+.register__header{
     display: flex;
     height: 230px;
     width: 100%;
     border-bottom: 3px solid;
 }
 
-.login__icon-container{
+.register__icon-container{
     display: flex;
     margin: auto;
 }
 
-.login__icon{
+.register__icon{
     height: 200px;
     width: 200px;
     margin-left: 60px;
 }
 
-.login__form{
+.register__form{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.login__title{
+.register__title{
     font-size: 35px;
-    margin: 20px auto;
+    margin: 15px auto;
     color: white;
 }
 
-.login__input-container{
+.register__input-container{
     display: flex;
     margin: 15px 0; 
     height: 40px;
     width: 100%;
 }
 
-.login__input{
+.register__input{
     height: 100%;
     width: 100%;
     font-size: 18px;
@@ -64,51 +63,21 @@
     padding: 5px 5px 5px 10px;
     border-bottom: 3px solid black;
 }
-.input__error{
-    background: #EFA8C0;
-    border-top: 3px solid red;
-    border-bottom: 3px solid red;
-}
 
-.login__state{
-    display: none; /* FLEX */
-    height: 44px;
-    width: 15%;
-    margin: auto;
-}
-
-.error, .checked{
-    height: 107%;
-    width: 100%;
-    margin: auto;
-    fill: white;
-    border-bottom: 3px solid;
-}
-
-.error__state{
-    border-top: 3px solid var(--error-background);
-    background: var(--error-background);
-}
-
-.checked__state{
-    border-top: 3px solid green;
-    background: green;
-}
-
-.login__button{
+.register__button{
     height: 60px;
     width: 360px;
     margin: 25px auto 10px auto !important;
-    background: var(--button-blue) !important;
+    background: #527EB5 !important;
     border: 3px solid white !important;
     outline: none;
-    cursor: pointer !important;
-}
-.login__button:hover{
-    background: var(--button-blue-hover) !important;
 }
 
-.login__footer{
+.register__button:hover{
+    background: #6693ca !important;
+}
+
+.register__footer{
     display: flex;
     flex-wrap: wrap;
     height: 150px;
@@ -117,7 +86,7 @@
     border-top: 3px solid;
 }
 
-.login__footer-link{
+.register__footer-link{
     display: flex;
     margin: auto 0 auto 0;
     height: 40px;
@@ -126,7 +95,7 @@
     cursor: pointer;
 }
 
-.login__footer-link:hover{
+.register__footer-link:hover{
     background: rgba(0, 0, 0, 0.6);
 }
 

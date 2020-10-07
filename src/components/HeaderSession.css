@@ -1,0 +1,28 @@
+.header__session-container{
+    display: flex;
+    height: 100%;
+}
+.header__link{
+    margin: auto;
+}
+.header__login-button, .header__register-button{
+    font-size: 16px !important;
+    width: 150px !important;
+    border: 2px solid white !important;
+    border-radius: 20px !important;
+    margin: auto 8px !important;
+}
+
+.header__login-button{
+    background: var(--button-blue) !important;
+}
+.header__login-button:hover{
+    background: var(--button-blue-hover) !important;
+}
+
+.header__register-button{
+    background: var(--button-green) !important;
+}
+.header__register-button:hover{
+    background: var(--button-green-hover) !important;
+}

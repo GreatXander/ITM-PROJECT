@@ -1,23 +1,14 @@
 .welcome__tag{
     top: -10px;
 }
-
-.svg{
-    height: 60px;
-    width: 60px;
-    margin: 20px auto 0 auto;
-}
-
 .books__svg{
     height: 80px;
     width: 80px;
 }
-
 .eraser__svg{
     height: 110px;
     width: 110px;
 }
-
 .school__draw{
     height: 250px;
     width: 500px;
@@ -30,7 +21,6 @@
     margin: auto;
     max-width: 1065px;
 }
-
 .public{
     position: relative;
     display: flex;
@@ -42,9 +32,11 @@
     background: var(--div-color);
     padding-bottom: 10px;
     border: 3px solid black;
-    border-radius: 8px;
+    box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
 }
-
+.public:hover{
+    transform: scale(1.03);
+}
 .public__text{
     font-size: 17px;
     font-family: 'Roboto', 'sans-serif';
@@ -59,7 +51,9 @@
     display: flex;
     min-height: 15px;
 }
-
+.public__division:hover{
+    transform: scale(1);
+}
 .public__division-title{
     margin: 8px auto 0 auto;
     font-size: 30px;
@@ -69,7 +63,6 @@
 .welcome__container{
     max-width: 100%;
 }
-
 .welcome{
     z-index: -100;
     border: none;
@@ -87,7 +80,6 @@
     flex-grow: 0.8;
     justify-content: space-evenly;
 }
-
 .public__menu-option{
     display: flex;
     flex-wrap: wrap;
@@ -97,9 +89,10 @@
     background: var(--div-color);
     border: 3px solid black;
     box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
-    border-radius: 8px;
 }
-
+.public__menu-option:hover{
+    transform: scale(1.05);
+}
 .public__menu-svg{
     height: 170px;
     width: 170px;
@@ -120,26 +113,37 @@ button{
     color: white !important;
     border-color: black !important;
     border-width: 2px !important;
+    border-radius: 0 !important;
 }
-
 .us__button{
     background: #43a0ce !important;
 }
-
+.us__button:hover{
+    background: #22698d !important;
+}
 .offer__button{
     background: #d13f3f !important;
 }
-
+.offer__button:hover{
+    background : #8a2525 !important;
+}
 .community__button{
     background: #D9D047  !important;
 }
-
+.community__button:hover{
+    background: #8d8626  !important;
+}
 .teachers__button{
     background: #DD956C !important;
 }
-
+.teachers__button:hover{
+    background: #8b5535 !important;
+}
 .library__button{
-    background: #8FC294 !important;
+    background: var(--button-green) !important;
+}
+.library__button:hover{
+    background: #407245 !important;
 }
 
 @media screen and  (max-width: 280px) /* For Galaxy Fold */{

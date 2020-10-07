@@ -1,0 +1,10 @@
+.top__alert{
+    display: flex;
+    position: fixed;
+    top: -85px;
+    height: 80px;
+    width: 100%;
+    background: var(--error-background);
+    border-bottom: 3px solid;
+    z-index: 200;
+}

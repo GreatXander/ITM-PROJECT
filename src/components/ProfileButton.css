@@ -1,0 +1,35 @@
+.profile__button{
+    display: flex;
+    position: absolute;
+    top: 38px;
+    right: 100px; /*40px*/
+    height: 45px;
+    width: 170px;
+    background: #2C2A2A;
+    border: 3px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.profile__button:hover{
+    background: #4D4C4C;
+}
+.profile__button-img-container{
+    height: 100%;
+    width: 60px;
+    margin-right: auto;
+    border-right: 5px solid white;
+    border-radius: 20px;
+}
+.profile__button-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.profile__button-title{
+    font-size: 16px;
+    margin: auto 10px auto 0;
+    color: white;
+}
+.profile__button-title:hover{
+    cursor: pointer;
+}

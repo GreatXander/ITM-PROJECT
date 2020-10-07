@@ -1,22 +1,24 @@
 .header__ul{
     display: none;
+    height: 100px;
     width: 720px;
-    margin: 30px auto;
-    padding: 0 90px 0 0;
+    margin: auto;
+    background: #2C2A2A;
+    border: 3px solid white;
+    border-radius: 20px;
     justify-content: space-evenly;
 }
 
 .header__li{
     display: flex;
-    height: 80px;
-    width: 90px;
+    height: 70px;
+    width: 100px;
+    margin: 15px 0;
+    border-radius: 10px;
     cursor: pointer;
 }
-
 .header__li:hover{
     background: rgba(251, 251, 251, 0.3);
-    border-radius: 10px;
-    border-bottom: 3px solid #8FC294;
 }
 
 .header__menu-option{
@@ -28,13 +30,13 @@
 .community__chat{
     height: 70px;
     width: 70px;
-    margin: 12px 10px 0 0;
+    margin: 10px 0 0 8px;
 }
 
 .glasses{
     height: 110px;
     width: 100px;
-    margin: -15px 0 0 0;
+    margin: -20px 0 0 0;
 }
 
 .fillSvg{
@@ -47,15 +49,27 @@
     border-bottom: 3px solid #8FC294;
 }
 
-.menu__button{
+.menu__button-container{
+    display: flex;
+    height: 70px;
+    width: 70px;
     order: 1;
+    margin: auto 15px auto;
     margin-left: auto;
-    cursor: pointer;
-    padding: 40px 30px;
+    cursor: pointer; 
+    border-radius: 10px;
+}
+.menu__button-container:hover{
+    background:#4D4C4C;
+}
+.menu__button{
+    height: 45px;
+    width: 45px;
+    margin: auto;
 }
 
-@media screen and (min-width: 1000px){
-    .menu__button{
+@media screen and (min-width: 1210px){
+    .menu__button-container, .menu__button{
         display: none;
     }
     .header__ul{
