@@ -1,10 +1,9 @@
 .profile__button{
     display: flex;
     position: absolute;
-    top: 38px;
-    right: 100px; /*40px*/
+    top: 35px;
+    right: 95px;
     height: 45px;
-    width: 170px;
     background: #2C2A2A;
     border: 3px solid white;
     border-radius: 20px;
@@ -24,12 +23,26 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
+    user-select: none;
 }
-.profile__button-title{
+.profile__button-username{
     font-size: 16px;
     margin: auto 10px auto 0;
     color: white;
+    padding: 0 35px 0 15px;
 }
-.profile__button-title:hover{
+.profile__button-username:hover{
     cursor: pointer;
+}
+
+@media screen and (min-width: 1120px){
+    .profile__button{
+        position: static;
+        margin: auto 15px auto 0;
+    }
+}
+@media screen and (min-width: 1280px){
+    .profile__button{
+        margin: auto 25px auto -10px;
+    }
 }

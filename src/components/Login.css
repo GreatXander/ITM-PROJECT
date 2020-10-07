@@ -1,6 +1,7 @@
 .login__main{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 700px;
 }

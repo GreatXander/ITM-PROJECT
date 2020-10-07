@@ -11,6 +11,11 @@ body {
   --button-blue-hover: #6693ca;
   --button-green: #88BB8D;
   --button-green-hover: #98CA9D;
+  --home-button:  #2C2A2A;
+  --us-button:  #43a0ce;
+  --offer-button:  #d13f3f;
+  --community-button:  #D9D047;
+  --teachers-button:  #DD956C;
   --form-background: #638D8E;
   --error-background: #AB3232;
 }
@@ -20,7 +25,7 @@ h1, h2, h3{
   padding: 0;
 }
 
-p, h2, h3{
+p, b, h2, h3{
   cursor: default;
   user-select: none;
 }
@@ -70,4 +75,44 @@ a{
   box-shadow: 0 6px 4px rgba(0, 0, 0, 0.35);
   border-bottom: 4px solid black;
   z-index: -100;
+}
+
+button{
+  color: white !important;
+}
+.home__button{
+  background: var(--home-button) !important;
+}
+.home__button:hover{
+  background: #2C2A2A;
+}
+.us__button{
+  background: var(--us-button) !important;
+}
+.us__button:hover{
+  background: #22698d !important;
+}
+.offer__button{
+  background: var(--offer-button) !important;
+}
+.offer__button:hover{
+  background : #8a2525 !important;
+}
+.community__button{
+  background: var(--community-button) !important;
+}
+.community__button:hover{
+  background: #8d8626  !important;
+}
+.teachers__button{
+  background: var(--teachers-button) !important;
+}
+.teachers__button:hover{
+  background: #8b5535 !important;
+}
+.library__button{
+  background: var(--button-greeb) !important;
+}
+.library__button:hover{
+  background: #407245 !important;
 }

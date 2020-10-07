@@ -1,7 +1,7 @@
-.header__ul{
+.header__nav{
     display: none;
     height: 100px;
-    width: 720px;
+    width: 650px;
     margin: auto;
     background: #2C2A2A;
     border: 3px solid white;
@@ -9,15 +9,15 @@
     justify-content: space-evenly;
 }
 
-.header__li{
+.header__navlink{
     display: flex;
     height: 70px;
-    width: 100px;
+    width: 90px;
     margin: 15px 0;
     border-radius: 10px;
     cursor: pointer;
 }
-.header__li:hover{
+.header__navlink:hover{
     background: rgba(251, 251, 251, 0.3);
 }
 
@@ -27,10 +27,10 @@
     margin: auto;
 }
 
-.community__chat{
+.community__logo{
     height: 70px;
     width: 70px;
-    margin: 10px 0 0 8px;
+    margin: 10px 0 0 4px;
 }
 
 .glasses{
@@ -54,7 +54,7 @@
     height: 70px;
     width: 70px;
     order: 1;
-    margin: auto 15px auto;
+    margin: auto 10px auto 0;
     margin-left: auto;
     cursor: pointer; 
     border-radius: 10px;
@@ -68,11 +68,22 @@
     margin: auto;
 }
 
-@media screen and (min-width: 1210px){
+@media screen and (min-width: 1120px){
     .menu__button-container, .menu__button{
         display: none;
     }
-    .header__ul{
+    .header__nav{
         display: flex;
+    }
+}
+@media screen and (min-width: 1200px){
+    .header__nav{
+        width: 700px;
+    }
+    .header__navlink{
+        width: 100px;
+    }
+    .community__logo{
+        margin-left: 8px;
     }
 }

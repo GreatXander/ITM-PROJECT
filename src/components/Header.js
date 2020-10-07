@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as SchoolLogo } from '../svgs/school__logo.svg'
 import HeaderMenu from './HeaderMenu'
+import HeaderSchoolTitle from './HeaderSchoolTitle'
 import ProfileButton from './ProfileButton'
 import HeaderSession from './HeaderSession';
 import './Header.css'
 
-import HeaderSchoolTitle from './HeaderSchoolTitle'
-
 export default class Header extends Component{
+    getUserName = () => {
+        return this.props.user.name + ' ' + this.props.user.lastname;
+    }
     render(){
         return(
             <header>
@@ -17,11 +19,8 @@ export default class Header extends Component{
                     <h1 className="school__logo-title">ITM</h1>
                 </Link>
 
-                {!this.props.isLoggedIn && <HeaderSchoolTitle />}
-                {!this.props.isLoggedin && <HeaderSession />}
-
-                {this.props.isLoggedIn && <HeaderMenu />}
-                {this.props.isLoggedIn && <ProfileButton username={this.props.user.name + ' ' + this.props.user.lastname + '.'}/>}
+                {this.props.isLoggedIn ? <HeaderMenu /> : <HeaderSchoolTitle />}
+                {this.props.isLoggedIn ? <ProfileButton username={this.getUserName()}/> : <HeaderSession />}
             </header>
         ) 
     }

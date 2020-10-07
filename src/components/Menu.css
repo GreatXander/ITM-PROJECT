@@ -1,10 +1,41 @@
 .menu__container{
-    position: absolute;
-    top: -310px;
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    position: absolute;
+    top: -310px;
+    height: 380px;
     width: 100%;
-    background: #89B9BB; /*old background: #9DCED1*/
-    border-bottom: 2px solid black;
+    background: #89B9BB;
+    border-bottom: 4px solid black;
+}
+.menu__ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+.menu__first-division, .menu__second-division{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 50%;
+}
+.menu__first-division{
+    outline: olive;
+}
+.menu__link{
+    display: flex;
+    height: 33.33%;
+    width: 100%;
+}
+.menu__link-title{
+    font-size: 22px;
+    color: white;
+    margin: auto auto 15px auto;
+}
+
+@media screen and (min-width: 1120px){
+    .menu__container{
+        display: none;
+    }
 }
