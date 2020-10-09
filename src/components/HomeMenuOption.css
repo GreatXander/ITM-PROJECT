@@ -83,6 +83,10 @@
     border-radius: 0 !important;
     background: var(--div-color) !important;
 }
+.info__button-title{
+    color: black;
+    cursor: pointer;
+}
 .info__button-icon{
     width: 50px;
 }
