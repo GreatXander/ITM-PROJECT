@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import Login from './components/Login'
 import Register from './components/Register'
@@ -41,7 +41,7 @@ function App(){
             <Route exact path="/comunidad" component={Community} />
             <Route exact path="/maestros" component={Teachers} />
             <Route exact path="/biblioteca" component={Library} />
-            <Route component={Home} />
+            <Redirect to="/" />
         </Switch>
         <Footer />
     </BrowserRouter>
