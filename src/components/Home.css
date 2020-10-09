@@ -2,15 +2,15 @@
     top: -10px;
 }
 .books__svg{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
 .eraser__svg{
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 100px;
 }
 .school__draw{
-    height: 250px;
+    height: 235px;
     width: 500px;
     margin-bottom: 10px;
 }
@@ -38,7 +38,6 @@
     transform: scale(1.03);
 }
 .home__inner-text{
-    font-size: 17px;
     font-family: 'Roboto', 'sans-serif';
     line-height: 30px;
     margin-top: -5px;
@@ -47,16 +46,24 @@
     overflow-wrap: anywhere;  
 }
 
+.home__division-container{
+    display: flex;
+    margin: auto;
+    max-width: 1065px;
+}
 .home__division{
     display: flex;
-    min-height: 15px;
-}
-.home__division:hover{
-    transform: scale(1);
+    flex-grow: 0.83;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    background: var(--div-color);
+    border: 3px solid black;
+    box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
 }
 .home__division-title{
     margin: 8px auto 0 auto;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Roboto', 'sans-serif';
 }
 
@@ -76,11 +83,13 @@
     .tag{
         display: none;
     }
+    .home__inner-text{
+        font-size: 13px;
+    }
     .home__division-title{
         font-size: 24px;
     }
 }
-
 @media screen and (min-width: 281px) and (max-width: 374px) /* For Iphone 5*/{
     .tag{
         height: 115px;
@@ -105,10 +114,23 @@
         border-radius: 0;
     }
 }
+@media screen and (min-width: 600px){
+    .home__inner-text{
+        font-size: 15px;
+    }
+    .home__division-title{
+        font-size: 30px;
+    }
+}
 @media screen and (min-width: 700px){
     .tag{
         height: 150px;
         width: 150px;
+    }
+}
+@media screen and (max-width: 700px){
+    .home__container-inner:hover{
+        transform: scale(1);
     }
 }
 @media screen and (min-width: 1035px){

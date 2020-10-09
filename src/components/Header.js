@@ -14,7 +14,7 @@ export default class Header extends Component{
     render(){
         return(
             <header>
-                <Link to="/" className="school__logo-container">
+                <Link to="" className="school__logo-container">
                     <SchoolLogo className="school__logo"/>
                     <h1 className="school__logo-title">ITM</h1>
                 </Link>

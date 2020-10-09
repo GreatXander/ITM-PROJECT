@@ -36,7 +36,7 @@ header{
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
     .school__logo-container{
         margin: 10px auto;
         padding: 0 40px 0 20px;

@@ -39,16 +39,16 @@ export default class Home extends Component {
                 </div>
             </div>
             
-            <div className="home__container">
-                <div className="home__container-inner home__division">
+            <div className="home__division-container">
+                <div className="home__division">
                     <h2 className="home__division-title">NUESTRO SISTEMA</h2>
                 </div>
             </div>
 
             <HomeMenu />
 
-            <div className="home__container">
-                <div className="home__container-inner home__division">
+            <div className="home__division-container">
+                <div className="home__division">
                     <h2 className="home__division-title">MÁS SOBRE NOSOTROS</h2>
                 </div>
             </div>
@@ -60,7 +60,7 @@ export default class Home extends Component {
                     <p className="home__inner-text">
                     <strong>Nuestras autoridades educativas piden a las escuelas la omnipresencia de una educación emocional</strong>; nos solicita a los
                     docentes que enfoquemos la atención en el contexto del alumno en todos sus ámbitos. <strong>Es necesario ofrecer a los alumnos un 
-                    abanico de experiencias</strong> que les permita vivir con intensidad todos y cada uno de los <strong>elementos de su riqueza interior</strong>.
+                    abanico de experiencias que les permita vivir los elementos de su riqueza interior</strong>.
                     </p>
                 </div>
             </div>
@@ -72,8 +72,7 @@ export default class Home extends Component {
                     <InfoTag className="tag" />
                     <p className="home__inner-text">
                     <strong>El dibujo, la pintura o la construcción constituyen un proceso complejo en el que el niño reúne diversos elementos de su 
-                    experiencia</strong> para formar un todo con un nuevo significado. En el proceso de <strong> seleccionar, interpretar y reafirmar 
-                    esos elementos</strong>, el niño nos da algo más que un dibujo o una escultura; <strong>nos proporciona una parte de sí mismo: 
+                    experiencia</strong> para formar un todo con un nuevo significado. En el proceso <strong>el niño nos da algo más que un dibujo o una escultura; nos proporciona una parte de sí mismo: 
                     cómo piensa, cómo siente y cómo ve</strong>.
                     </p>
                 </div>
@@ -85,8 +84,7 @@ export default class Home extends Component {
                     <InfoTag className="tag" />
                     <p className="home__inner-text">
                     La expresión <strong>"Deporte Escolar"</strong> da lugar a un campo conceptual amplio en muchos sentidos, en tanto que <strong>debe permitir identificar 
-                    claramente el tipo de práctica o actividad que se envuelve en tal expresión</strong>, precisando, cuál es el significado, el sentido y la 
-                    finalidad de la misma. <strong>El Deporte Escolar puede ser un instrumento que contribuya a la adquisición de habilidades sociales en 
+                    claramente el tipo de práctica o actividad que se envuelve en tal expresión</strong>. El Deporte Escolar puede ser un <strong>instrumento que contribuya a la adquisición de habilidades sociales en 
                     las personas</strong>.
                     </p>
                 </div>
