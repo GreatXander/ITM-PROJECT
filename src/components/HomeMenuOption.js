@@ -43,7 +43,9 @@ export default class HomeMenuOption extends Component {
                     onMouseLeave={e => document.getElementById(this.optionInfoButton).style.transform = 'scale(1)'}
                     onClick={e => this.handleOptionClick()}
                     >
-                        <RightArrow className="info__button-icon" id={this.optionInfoButton} />
+                        <h2 className="info__button-title"><strong>SABER MÁS</strong></h2>
+                        {/*<RightArrow className="info__button-icon" id={this.optionInfoButton} />*/}
+
                     </Button>
                   
                 </div>
