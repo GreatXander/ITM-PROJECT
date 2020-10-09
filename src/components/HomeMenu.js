@@ -17,33 +17,51 @@ export default class HomeMenu extends Component {
                 buttoncolor="var(--us-button)" 
                 icon={<Director className="home__menu-svg"/>}  message="NOSOTROS" 
                 optionInfo={
-                    <p className="option__info">
-                        <strong>Nuestro compromiso con la calidad no sólo se refleja en nuestra acreditación institucional</strong>, 
-                    sino también en <strong> nuestro modelo de enseñanza</strong>, <strong> en la empleabilidad de nuestros alumnos y 
-                    en nuestra infraestructura</strong>.
+                    <p className="option__info-p">
+                     
                     </p>
                 }/>
 
                 <HomeMenuOption 
                 buttoname="offer__button" 
                 buttoncolor="var(--offer-button)" 
-                icon={<Pencil className="home__menu-svg"/>} message="OFERTAS" />
+                icon={<Pencil className="home__menu-svg"/>} message="OFERTAS" 
+                optionInfo={
+                    <p className="option__info-p">
+                     
+                    </p>
+                }/>
 
                 <HomeMenuOption 
                 buttoname="community__button" 
                 buttoncolor="var(--community-button)" 
-                icon={<Community className="home__menu-svg"/>} message="COMUNIDAD" />
+                icon={<Community className="home__menu-svg"/>} message="COMUNIDAD" 
+                optionInfo={
+                    <p className="option__info-p">
+                     
+                    </p>
+                }/>
 
                 <HomeMenuOption 
                 buttoname="teachers__button" 
                 buttoncolor="var(--teachers-button)" 
-                icon={<Rule className="home__menu-svg"/>} message="MAESTROS" />
+                icon={<Rule className="home__menu-svg"/>} message="MAESTROS" 
+                optionInfo={
+                    <p className="option__info-p">
+                     
+                    </p>
+                }/>
 
                 <HomeMenuOption 
                 buttoname="library__button" 
                 buttoncolor="var(--button-green)" 
                 isLast={true} 
-                icon={<BackPack className="home__menu-svg"/>}  message="BIBLIOTECA" />
+                icon={<BackPack className="home__menu-svg"/>}  message="BIBLIOTECA" 
+                optionInfo={
+                    <p className="option__info-p">
+                     
+                    </p>
+                }/>
             </div>
         )
     }

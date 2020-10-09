@@ -21,7 +21,7 @@
     margin: auto;
     max-width: 1065px;
 }
-.home__container-inner{
+.home__container-inner{ 
     position: relative;
     display: flex;
     flex-wrap: wrap;

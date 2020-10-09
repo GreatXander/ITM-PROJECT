@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: #62929a;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
   
 :root{
@@ -9,7 +9,7 @@ body {
   --black: #363434;
   --button-blue: #527EB5;
   --button-blue-hover: #6693ca;
-  --button-green: #88BB8D;
+  --button-green: #7AAB7F;
   --button-green-hover: #98CA9D;
   --home-button:  #2C2A2A;
   --us-button:  #43a0ce;

@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     position: absolute;
     top: -310px;
-    height: 380px;
+    height: 400px;
     width: 100%;
     background: #89B9BB;
     border-bottom: 4px solid black;
@@ -32,6 +32,7 @@
     font-size: 22px;
     color: white;
     margin: auto auto 15px auto;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1120px){

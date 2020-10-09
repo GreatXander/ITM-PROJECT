@@ -8,11 +8,11 @@ export default class HeaderSession extends Component {
         return (
             <div className="header__session-container">
                 <Link to="/login" className="header__link">
-                    <Button className="header__login-button">Iniciar Sesión</Button>
+                    <Button className="header__login-button"><b className="session__button-text">INGRESAR</b></Button>
                 </Link>
 
                 <Link to="/registro" className="header__link">
-                    <Button className="header__register-button">Registrarme</Button>
+                    <Button className="header__register-button"><b className="session__button-text">Registrarme</b></Button>
                 </Link>
             </div>
         )

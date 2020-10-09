@@ -1,9 +1,10 @@
 .school__title-container{
-    display: flex;
-    height: 60px;
+    display: none;
+    flex-wrap: wrap;
+    min-height: 60px;
     padding: 0 30px;
     margin: auto;
-    background: #D9D047;
+    background: #CBC23F;
     border: 3px solid white;
     border-radius: 20px;
     cursor: pointer;
@@ -18,23 +19,28 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (min-width: 1025px){
     .school__title-container{
-        display: none;
+        display: flex;
     }
 }
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1110px){
     .school__title-container{
-        padding: 0 75px;
+        padding: 0 80px;
     }
 }
-@media screen and (min-width: 1250px){
+@media screen and (min-width: 1215px){
     .school__title-container{
         padding: 0 100px;
     }
 }
+@media screen and (min-width: 1245px) and (max-width: 1279px){
+    .school__title-container{
+        margin-right: -80px;
+    }
+}
 @media screen and (min-width: 1280px){
     .school__title-container{
-        margin-right: 35px;
+        margin-right: -110px;
     }
 }

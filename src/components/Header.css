@@ -1,7 +1,8 @@
 header{
     position: relative;
     display: flex;
-    height: 120px;
+    flex-wrap: wrap;
+    min-height: 120px;
     width: 100%;
     background: var(--black);
     border-bottom: 4px solid black;
@@ -13,7 +14,7 @@ header{
 .school__logo-container{
     display: flex;
     height: 100px;
-    margin: auto 15px;
+    margin: 10px;
     background: #2C2A2A;
     border: 3px solid white;
     border-radius: 20px;
@@ -34,9 +35,14 @@ header{
     margin: auto 8px;
 }
 
+
 @media screen and (max-width: 700px){
-    .school__logo-title{
-        display: none;
+    .school__logo-container{
+        margin: 10px auto;
+        padding: 0 40px 0 20px;
+    }
+    .school__logo{
+        margin: auto 0 auto 20px;
     }
 }
 @media screen and (min-width: 1210px) and (max-width: 1300px){
