@@ -34,16 +34,16 @@
 .session__button-text{
     cursor: pointer;
 }
-@media screen and (max-width: 280px){
+@media screen and (min-width: 280px) and (max-width: 359px){
     .header__login-button, .header__register-button{
         font-size: 14px !important;
         width: 110px !important;
     }
 }
-@media screen and (min-width: 281px) and (max-width: 499px){
+@media screen and (min-width: 360px) and (max-width: 499px){
     .header__login-button, .header__register-button{
         height: 40px !important;
-        width: 130px !important;
+        width: 150px !important;
     }
 }
 @media screen and (max-width: 650px){
