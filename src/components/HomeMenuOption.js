@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Button } from '@material-ui/core'
-import {ReactComponent as RightArrow} from '../svgs/right-arrow.svg'
 import './HomeMenuOption.css'
 
 export default class HomeMenuOption extends Component {
@@ -13,9 +12,7 @@ export default class HomeMenuOption extends Component {
 
     render() {
         return (
-            <div className={`home__menu-option ${this.props.isLast && 'home__menu-last'}`}
-            onMouseEnter={e => document.getElementById(this.optionInfoId).style.display = 'flex'}
-            onMouseLeave={e => document.getElementById(this.optionInfoId).style.display = 'none'}>
+            <div className={`home__menu-option ${this.props.isLast && 'home__menu-last'}`}>
 
                 <div className="option__header" style={{background: this.props.buttoncolor}}>
                 </div>
@@ -38,14 +35,9 @@ export default class HomeMenuOption extends Component {
                         {this.props.optionInfo}
                     </div>
                     
-                    <Button className="option__info-button"
-                    onMouseEnter={e => document.getElementById(this.optionInfoButton).style.transform = 'scale(1.1)'}
-                    onMouseLeave={e => document.getElementById(this.optionInfoButton).style.transform = 'scale(1)'}
-                    onClick={e => this.handleOptionClick()}
-                    >
+                    <Button className="option__info-button">
                         <h2 className="info__button-title"><strong>SABER MÁS</strong></h2>
                         {/*<RightArrow className="info__button-icon" id={this.optionInfoButton} />*/}
-
                     </Button>
                   
                 </div>
