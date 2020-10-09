@@ -1,8 +1,12 @@
 body {
     margin: 0;
     background: #62929a;
-    overflow-x: hidden;
-  }
+}
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
   
 :root{
   --div-color: #efecec;
