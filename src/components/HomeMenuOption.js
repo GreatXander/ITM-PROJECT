@@ -5,11 +5,6 @@ import './HomeMenuOption.css'
 export default class HomeMenuOption extends Component {
     optionInfoId = this.props.buttoname + '__info';
     optionInfoButton = `info__button + ${this.props.buttoname}`;
-
-    handleOptionClick = () =>{
-        document.getElementById(this.optionInfoButton).style.transform = 'scale(1)'
-    }
-
     render() {
         return (
             <div className={`home__menu-option ${this.props.isLast && 'home__menu-last'}`}
@@ -40,6 +35,7 @@ export default class HomeMenuOption extends Component {
                     <Button className="option__info-button">
                         <h2 className="info__button-title"><strong>SABER MÁS</strong></h2>
                         {/*<RightArrow className="info__button-icon" id={this.optionInfoButton} />*/}
+
                     </Button>
                   
                 </div>
