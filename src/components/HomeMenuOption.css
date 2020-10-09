@@ -19,9 +19,8 @@
     margin: auto;
 }
 .home__menu-last{
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
-
 .option__header{
     display: flex;
     height: 50px;
@@ -77,7 +76,7 @@
 }
 
 .option__info-button{
-    height: 15% !important;
+    height: 17% !important;
     width: 100% !important;
     margin-top: auto !important;
     border-top: 3px solid black !important;
@@ -85,9 +84,7 @@
     background: var(--div-color) !important;
 }
 .info__button-icon{
-    height: 50px;
     width: 50px;
-    margin: auto;
 }
 
 @media screen and  (max-width: 280px){

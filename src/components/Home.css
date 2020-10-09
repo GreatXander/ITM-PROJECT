@@ -80,7 +80,7 @@
     width: 100%;
 }
 
-@media screen and  (max-width: 280px) /* For Galaxy Fold */{
+@media only screen and  (max-width: 280px) /* For Galaxy Fold */{
     .tag{
         display: none;
     }
@@ -91,7 +91,7 @@
         font-size: 24px;
     }
 }
-@media screen and (min-width: 281px) and (max-width: 374px) /* For Iphone 5*/{
+@media only screen and (min-width: 281px) and (max-width: 374px) /* For Iphone 5*/{
     .tag{
         height: 115px;
         width: 115px;
@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (max-width: 540px){
+@media only screen and (max-width: 540px){
     .tag{
         height: 120px;
         width: 120px;
@@ -115,23 +115,28 @@
         border-radius: 0;
     }
 }
-@media screen and (min-width: 600px){
+@media only screen and (min-width: 600px){
     .home__division-title{
         font-size: 30px;
     }
 }
-@media screen and (min-width: 700px){
+@media only screen and (min-width: 700px){
     .tag{
         height: 150px;
         width: 150px;
     }
 }
-@media screen and (max-width: 700px){
+@media only screen and (max-width: 700px){
     .home__container-inner:hover{
         transform: scale(1);
     }
 }
-@media screen and (min-width: 1035px){
+@media only screen and (max-device-width: 830px) and (orientation: landscape){
+    .home__inner-text{
+        font-size: 12px;
+    }   
+}
+@media only screen and (min-width: 1035px){
     .home__menu-container{
         justify-content: space-between;
     }
