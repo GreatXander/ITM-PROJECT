@@ -12,7 +12,9 @@ export default class HomeMenuOption extends Component {
 
     render() {
         return (
-            <div className={`home__menu-option ${this.props.isLast && 'home__menu-last'}`}>
+            <div className={`home__menu-option ${this.props.isLast && 'home__menu-last'}`}
+            onMouseEnter={e => document.getElementById(this.optionInfoId).style.display = 'flex'}
+            onMouseLeave={e => document.getElementById(this.optionInfoId).style.display = 'none'}>
 
                 <div className="option__header" style={{background: this.props.buttoncolor}}>
                 </div>
