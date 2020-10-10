@@ -41,6 +41,7 @@ function App(){
             <Route exact path="/comunidad" component={Community} />
             <Route exact path="/maestros" component={Teachers} />
             <Route exact path="/biblioteca" component={Library} />
+            <Redirect to="/" />
         </Switch>
         <Footer />
     </BrowserRouter>
