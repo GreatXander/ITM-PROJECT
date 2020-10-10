@@ -1,6 +1,7 @@
 body {
-    margin: 0;
-    background: #62929a;
+  min-width: 280px;
+  margin: 0;
+  background: #62929a;
 }
 
 html, body{
