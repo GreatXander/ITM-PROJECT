@@ -30,10 +30,10 @@
     background: var(--button-green-hover) !important;
     transform: scale(1.03);
 }
-
 .session__button-text{
     cursor: pointer;
 }
+
 @media screen and (min-width: 280px) and (max-width: 359px){
     .header__login-button, .header__register-button{
         font-size: 14px !important;
@@ -46,16 +46,16 @@
         width: 150px !important;
     }
 }
+@media screen and (min-width: 500px) and (max-width: 650px){
+    .header__login-button, .header__register-button{
+        width: 210px !important;
+    }
+}
 @media screen and (max-width: 650px){
     .header__session-container{
         border-top: 4px solid;
         width: 100%;
         margin: 0;
         padding: 10px;
-    }
-}
-@media screen and (min-width: 500px) and (max-width: 650px){
-    .header__login-button, .header__register-button{
-        width: 210px !important;
     }
 }

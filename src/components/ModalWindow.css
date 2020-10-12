@@ -1,6 +1,6 @@
 .modal__window-main{
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -10,15 +10,37 @@
 }
 
 .modal__window-content{
+    position: relative;
     display: flex;
-    height: 450px;
     width: 450px;
-    margin: auto;
+    max-width: 900px;
+    margin: 10px auto;
     background: var(--div-color);
     border: 3px solid black;
+    overflow-y: scroll;
 }
-
 .modal__window-title{
     font-size: 30px;
     margin: auto;
+}
+.modal__close-button{
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    height: 65px;
+    width: 85px;
+    border-left: 3px solid white !important;
+    border-bottom: 3px solid white !important;
+    border-radius: 0 !important;
+    background: var(--error-background) !important;
+}
+.modal__button-icon{
+    height: 45px;
+    width: 45px;
+}
+
+@media screen and (min-width: 900px){
+    .modal__window-content{
+        width: 50%;
+    }
 }

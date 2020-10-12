@@ -15,17 +15,19 @@ export default class HomeMenu extends Component {
                 <HomeMenuOption 
                 buttoname="us__button" 
                 buttoncolor="var(--us-button)" 
-                icon={<Director className="home__menu-svg"/>}  message="NOSOTROS" 
+                icon={<Director className="home__menu-svg"/>} 
+                title="NOSOTROS" 
                 optionInfo={
                     <p className="option__info-p">
-                     
+                        
                     </p>
                 }/>
 
                 <HomeMenuOption 
                 buttoname="offer__button" 
                 buttoncolor="var(--offer-button)" 
-                icon={<Pencil className="home__menu-svg"/>} message="OFERTAS" 
+                icon={<Pencil className="home__menu-svg"/>} 
+                title="OFERTAS" 
                 optionInfo={
                     <p className="option__info-p">
                      
@@ -35,7 +37,8 @@ export default class HomeMenu extends Component {
                 <HomeMenuOption 
                 buttoname="community__button" 
                 buttoncolor="var(--community-button)" 
-                icon={<Community className="home__menu-svg"/>} message="COMUNIDAD" 
+                icon={<Community className="home__menu-svg"/>} 
+                title="COMUNIDAD" 
                 optionInfo={
                     <p className="option__info-p">
                      
@@ -45,7 +48,8 @@ export default class HomeMenu extends Component {
                 <HomeMenuOption 
                 buttoname="teachers__button" 
                 buttoncolor="var(--teachers-button)" 
-                icon={<Rule className="home__menu-svg"/>} message="MAESTROS" 
+                icon={<Rule className="home__menu-svg"/>} 
+                title="MAESTROS" 
                 optionInfo={
                     <p className="option__info-p">
                      
@@ -56,7 +60,8 @@ export default class HomeMenu extends Component {
                 buttoname="library__button" 
                 buttoncolor="var(--button-green)" 
                 isLast={true} 
-                icon={<BackPack className="home__menu-svg"/>}  message="BIBLIOTECA" 
+                icon={<BackPack className="home__menu-svg"/>}  
+                title="BIBLIOTECA" 
                 optionInfo={
                     <p className="option__info-p">
                      

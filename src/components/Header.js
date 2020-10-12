@@ -14,13 +14,21 @@ export default class Header extends Component{
     render(){
         return(
             <header>
-                <Link to="" className="school__logo-container">
+                <Link to="/" className="school__logo-container">
                     <SchoolLogo className="school__logo"/>
                     <h1 className="school__logo-title">ITM</h1>
                 </Link>
 
-                {this.props.isLoggedIn ? <HeaderMenu /> : <HeaderSchoolTitle />}
-                {this.props.isLoggedIn ? <ProfileButton username={this.getUserName()}/> : <HeaderSession />}
+                {this.props.user.hasOwnProperty('name')
+                ? 
+                <HeaderMenu /> : <HeaderSchoolTitle />}
+                
+                {this.props.user.hasOwnProperty('name') ? 
+                <ProfileButton username={this.getUserName()}/>
+                :
+                <HeaderSession 
+                setModal={this.props.setModal} 
+                setUser={this.props.setUser}/>}
             </header>
         ) 
     }

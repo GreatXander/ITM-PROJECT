@@ -1,25 +1,13 @@
-.register__main{
-    position: relative;
-    display: flex;
-    margin: auto;
-    max-width: 700px;
-}
-
 .register__container{
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
-    margin: 50px auto;
-    flex-grow: 0.8;
-    border: 3px solid white;
-    box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
-    padding-bottom: 15px;
+    width: 100%;
     background: var(--form-background);
 }
 
 .register__header{
     display: flex;
-    height: 230px;
+    height: 170px;
     width: 100%;
     border-bottom: 3px solid;
 }
@@ -30,34 +18,36 @@
 }
 
 .register__icon{
-    height: 200px;
-    width: 200px;
-    margin-left: 60px;
+    height: 150px;
+    width: 150px;
+    margin-left: 35px;
 }
 
 .register__form{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 20px;
+    background: var(--form-background);
 }
 
 .register__title{
-    font-size: 35px;
+    font-size: 30px;
     margin: 15px auto;
     color: white;
 }
 
 .register__input-container{
     display: flex;
-    margin: 15px 0; 
-    height: 40px;
+    margin-bottom: 8px; 
+    height: 30px;
     width: 100%;
 }
 
 .register__input{
     height: 100%;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     border: none;
     outline: none;
     padding: 5px 5px 5px 10px;
@@ -66,41 +56,14 @@
 
 .register__button{
     height: 60px;
-    width: 360px;
+    width: 320px;
+    font-size: 16px !important;
+    font-weight: bold !important;
     margin: 25px auto 10px auto !important;
     background: #527EB5 !important;
     border: 3px solid white !important;
     outline: none;
 }
-
 .register__button:hover{
     background: #6693ca !important;
-}
-
-.register__footer{
-    display: flex;
-    flex-wrap: wrap;
-    height: 150px;
-    width: 100%;
-    margin-top: 15px;
-    border-top: 3px solid;
-}
-
-.register__footer-link{
-    display: flex;
-    margin: auto 0 auto 0;
-    height: 40px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-}
-
-.register__footer-link:hover{
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.footer__link-button{
-    height: 100% !important;
-    width: 100% !important;
-    font-size: 18px;
 }

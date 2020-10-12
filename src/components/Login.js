@@ -24,69 +24,77 @@ export default class Login extends Component{
         emailStateDiv.style.display = 'flex';
         
         if(user.data){
-            this.setState({emailState : true})
+            await this.setState({emailState : true})
 
             passwordStateDiv.style.display = 'flex';
             if(this.state.password === user.data.password){
-                this.setState({passwordState : true});
-                this.props.passNsetUser(user.data);
-                this.props.history.push('/');
+                await this.setState({passwordState : true});
+                this.props.functions.setUser(user.data);
+                this.props.functions.setModal({visible: false, component: null})
             }else{
-                this.setState({passwordState : false});
+                await this.setState({passwordState : false});
             }
         }else{
-            this.setState({emailState : false});
+            await this.setState({emailState : false});
         }
     }
 
     render(){
         return(
-            <div className="login__main">
-    
-                <div className="login__container">
+        <div className="login__container">
+            
+            <div className="login__header">
 
-                    <div className="login__header">
-                        <div className="login__icon-container">
-                            <LoginIcon className="login__icon" />
-                        </div>
-                    </div>
+                <div className="login__icon-container">
+                    <LoginIcon className="login__icon" />
+                </div>
 
-                    <form className="login__form" autoComplete="off"
-                    onSubmit = {e => e.preventDefault()}>
+            </div>
+            
+            <form className="login__form" autoComplete="off"
+            onSubmit = {e => e.preventDefault()}>
         
-                        <h2 className="login__title">EMAIL</h2>
-                        <div className="login__input-container">
-                            <input type="text" name="email" id="email" className="login__input" placeholder="Inserte Su Email..." 
-                            onChange = {e => this.setState({email: e.target.value})} />
-                            <div className="login__state" id="email__state">
-                                {this.state.emailState ? <Check className="checked checked__state" /> : <Error className="error error__state" />}
-                            </div>
-                        </div>
-                        
-                        <h2 className="login__title">CONTRASEÑA</h2>
-                        <div className="login__input-container">
-                            <input type="password" name="password" id="password" className="login__input" placeholder="Inserte Su Contraseña..." 
-                            onChange = {e => this.setState({password: e.target.value})}/>
-                            <div className="login__state" id="password__state">
-                                {this.state.passwordState ? <Check className="checked checked__state" /> : <Error className="error error__state" />}
-                            </div>
-                        </div>
+                <h2 className="login__title">EMAIL</h2>
+                <div className="login__input-container">
 
-                        <Button className="login__button" onClick = {this.confirmUser} >INGRESAR</Button>
-                    </form>
+                    <input type="text" name="email" id="email" className="login__input" placeholder="Inserte Su Email..." 
+                    onChange = {e => this.setState({email: e.target.value})} />
 
-                    <div className="login__footer">
-                        <Link to="cambiar_contraseña" className="login__footer-link" aria-label="Cambiar Contraseña">
-                            <Button className="footer__link-button" >NO RECUERDO MI CONTRASEÑA</Button>
-                        </Link>
-
-                        <Link to="/registro" className="login__footer-link" aria-label="Crear Cuenta">
-                            <Button className="footer__link-button" >NO TENGO UNA CUENTA</Button>
-                        </Link>
+                    <div className="login__state" id="email__state">
+                        {this.state.emailState ? <Check className="checked checked__state" /> : <Error className="error error__state" />}
                     </div>
 
                 </div>
+                        
+                <h2 className="login__title">CONTRASEÑA</h2>
+                <div className="login__input-container">
+
+                    <input type="password" name="password" id="password" className="login__input" placeholder="Inserte Su Contraseña..." 
+                    onChange = {e => this.setState({password: e.target.value})}/>
+                    
+                    <div className="login__state" id="password__state">
+                        {this.state.passwordState ? <Check className="checked checked__state" /> : <Error className="error error__state" />}
+                    </div>
+
+                </div>
+
+                <Button className="login__button" onClick = {this.confirmUser} >INGRESAR</Button>
+           
+            </form>
+
+            <div className="login__footer">
+
+                <Link to="cambiar_contraseña" className="login__footer-link" aria-label="Cambiar Contraseña">
+                    <Button className="footer__link-button" >NO RECUERDO MI CONTRASEÑA</Button>
+                </Link>
+
+                <Link to="" className="login__footer-link" aria-label="Crear Cuenta">
+                    <Button className="footer__link-button" >NO TENGO UNA CUENTA</Button>
+                </Link>
+
             </div>
+
+        </div>
         )
     }
 }

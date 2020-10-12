@@ -1,27 +1,12 @@
-.login__main{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 700px;
-}
-
 .login__container{
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
-    margin: 50px auto;
-    flex-grow: 0.8;
-    border: 3px solid;
-    border-radius: 20px;
-    box-shadow: -5px 6px 4px rgba(0, 0, 0, 0.35);
-    padding-bottom: 15px;
     background: var(--form-background);
 }
 
 .login__header{
     display: flex;
-    height: 230px;
+    height: 170px;
     width: 100%;
     border-bottom: 3px solid;
 }
@@ -32,27 +17,28 @@
 }
 
 .login__icon{
-    height: 200px;
-    width: 200px;
-    margin-left: 60px;
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
 }
 
 .login__form{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    background: var(--form-background);
 }
 
 .login__title{
-    font-size: 35px;
-    margin: 20px auto;
+    font-size: 30px;
+    margin: 15px auto;
     color: white;
 }
 
 .login__input-container{
     display: flex;
-    margin: 15px 0; 
-    height: 40px;
+    margin: 10px 0; 
+    height: 30px;
     width: 100%;
 }
 
@@ -73,7 +59,7 @@
 
 .login__state{
     display: none; /* FLEX */
-    height: 44px;
+    height: 35px;
     width: 15%;
     margin: auto;
 }
@@ -98,7 +84,9 @@
 
 .login__button{
     height: 60px;
-    width: 360px;
+    width: 320px;
+    font-size: 16px !important;
+    font-weight: bold !important;
     margin: 25px auto 10px auto !important;
     background: var(--button-blue) !important;
     border: 3px solid white !important;
@@ -115,12 +103,13 @@
     height: 150px;
     width: 100%;
     margin-top: 15px;
+    background: var(--form-background);
     border-top: 3px solid;
 }
 
 .login__footer-link{
     display: flex;
-    margin: auto 0 auto 0;
+    margin: auto;
     height: 40px;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -134,5 +123,5 @@
 .footer__link-button{
     height: 100% !important;
     width: 100% !important;
-    font-size: 18px;
+    font-size: 14px !important;
 }

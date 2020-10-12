@@ -28,14 +28,18 @@
     width: 100%;
     border-bottom: 3px solid black;
 }
-.option__message-container{
+.option__body{
+    display: flex;
+    width: 100%;
+}
+.option__footer{
     display: flex;
     height: 50px;
     width: 100%;
     margin-top: auto;
     border-top: 3px solid black;
 }
-.option-message{
+.option-title{
     font-size: 21px;
     margin: auto;
     color: white;
@@ -68,27 +72,29 @@
     padding: 10px;
 }
 .option__info-p{
-    font-size: 17px;
+    font-size: 15px;
     margin: auto;
-    text-align: justify;
+    text-align: center;
     color: white;
 }
 
 .option__info-button{
-    height: 17% !important;
-    width: 100% !important;
-    margin-top: auto !important;
-    border-top: 3px solid black !important;
-    border-radius: 0 !important;
-    background: var(--div-color) !important;
-}
-.info__button-title{
-    color: black;
+    display: flex;
+    height: 17%;
+    width: 100%;
+    margin-top: auto;
+    background: var(--div-color);
+    border-top: 3px solid black;
     cursor: pointer;
 }
 .info__button-icon{
+    margin: auto;
     width: 50px;
 }
+/*.info__button-title{
+    color: black;
+    cursor: pointer;
+}*/
 
 @media screen and (max-width: 399px){
     .home__menu-option{
