@@ -9,4 +9,3 @@ export default class TopAlert extends Component {
         )
     }
 }
-

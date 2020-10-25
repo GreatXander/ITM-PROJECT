@@ -16,8 +16,8 @@ import Footer from './components/Footer'
 import TopAlert from './components/TopAlert'
 import ModalWindow from './components/ModalWindow'
 
-function App(props){
-    const [User, setUser] = useState({});
+function App(){
+    const [User, setUser] = useState( JSON.parse(localStorage.getItem('user')) || {} );
     const [Modal, setModal] = useState({visible: false, component: null, functions: {}});
 
     return(
@@ -27,8 +27,8 @@ function App(props){
         setUser={setUser}
         setModal={setModal} />
 
-        {User && <TopAlert />}
-        {User && <Menu />}
+        {Object.keys(User).length > 0 && <TopAlert />}
+        {Object.keys(User).length > 0 && <Menu />}
         
         {Modal.visible && 
         <ModalWindow 
@@ -38,13 +38,13 @@ function App(props){
         }
 
         <Switch>
-            <Route exact path="/cambiar_contraseña" component={ChangePass} />
             <Route exact path="/" component={Home} />
             <Route exact path="/nosotros" component={Us} />
             <Route exact path="/oferta_academica" component={Offer} />
             <Route exact path="/comunidad" component={Community} />
             <Route exact path="/maestros" component={Teachers} />
             <Route exact path="/biblioteca" component={Library} />
+            <Route exact path="/cambiar_contraseña" component={ChangePass} />
             <Redirect to="/" />
         </Switch>
         <Footer />

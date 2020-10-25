@@ -1,0 +1,11 @@
+.welcome__container{
+    max-width: 100%;
+}
+.welcome{
+    z-index: -100;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 0;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.35);
+    width: 100%;
+}

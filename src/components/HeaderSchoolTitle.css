@@ -9,9 +9,6 @@
     border-radius: 20px;
     cursor: pointer;
 }
-.school__title-container:hover{
-    transform: scale(1.03);
-}
 .school__title{
     font-size: 30px;
     margin: auto;

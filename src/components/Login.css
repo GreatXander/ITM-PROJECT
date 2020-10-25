@@ -15,7 +15,6 @@
     display: flex;
     margin: auto;
 }
-
 .login__icon{
     height: 150px;
     width: 150px;
@@ -25,6 +24,7 @@
 .login__form{
     display: flex;
     flex-wrap: wrap;
+    height: 320px;
     width: 100%;
     background: var(--form-background);
 }
@@ -41,7 +41,6 @@
     height: 30px;
     width: 100%;
 }
-
 .login__input{
     height: 100%;
     width: 100%;
@@ -63,7 +62,6 @@
     width: 15%;
     margin: auto;
 }
-
 .error, .checked{
     height: 107%;
     width: 100%;
@@ -71,12 +69,10 @@
     fill: white;
     border-bottom: 3px solid;
 }
-
 .error__state{
     border-top: 3px solid var(--error-background);
     background: var(--error-background);
 }
-
 .checked__state{
     border-top: 3px solid green;
     background: green;
@@ -106,7 +102,6 @@
     background: var(--form-background);
     border-top: 3px solid;
 }
-
 .login__footer-link{
     display: flex;
     margin: auto;
@@ -115,11 +110,9 @@
     background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
-
 .login__footer-link:hover{
     background: rgba(0, 0, 0, 0.6);
 }
-
 .footer__link-button{
     height: 100% !important;
     width: 100% !important;

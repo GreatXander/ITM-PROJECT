@@ -27,7 +27,11 @@ export default class HeaderSession extends Component {
                     <Button 
                     className="header__register-button"
                     onClick=
-                    {e => this.props.setModal({visible: true, component: Register})}>
+                    {e => this.props.setModal(
+                        {visible: true, component: Register,
+                        functions: {setUser: this.props.setUser, setModal: this.props.setModal}
+                        }
+                    )}>
                         <b className="session__button-text">Registrarme</b>
                     </Button>
 

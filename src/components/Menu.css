@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     position: absolute;
     top: -310px;
-    height: 400px;
+    height: 300px;
     width: 100%;
     background: #89B9BB;
     border-bottom: 4px solid black;
@@ -14,18 +14,15 @@
     height: 100%;
     width: 100%;
 }
-.menu__first-division, .menu__second-division{
+
+.menu__li{
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 50%;
-}
-.menu__first-division{
-    outline: olive;
+    height: 50px;
+    width: 100%;
 }
 .menu__link{
     display: flex;
-    height: 33.33%;
+    height: 100%;
     width: 100%;
 }
 .menu__link-title{

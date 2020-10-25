@@ -18,19 +18,17 @@ export default class Login extends Component{
 
     confirmUser = async () => {
         const user = await axios.get('http://localhost:4000/api/users/email/' + this.state.email);
-        const emailStateDiv = document.getElementById('email__state');
-        const passwordStateDiv = document.getElementById('password__state');
-
-        emailStateDiv.style.display = 'flex';
+        document.getElementById('email__state').style.display = 'flex';
         
         if(user.data){
             await this.setState({emailState : true})
+            document.getElementById('password__state').style.display = 'flex';
 
-            passwordStateDiv.style.display = 'flex';
             if(this.state.password === user.data.password){
                 await this.setState({passwordState : true});
                 this.props.functions.setUser(user.data);
                 this.props.functions.setModal({visible: false, component: null})
+                localStorage.setItem('user', JSON.stringify(user.data));
             }else{
                 await this.setState({passwordState : false});
             }
@@ -48,7 +46,6 @@ export default class Login extends Component{
                 <div className="login__icon-container">
                     <LoginIcon className="login__icon" />
                 </div>
-
             </div>
             
             <form className="login__form" autoComplete="off"
@@ -63,7 +60,6 @@ export default class Login extends Component{
                     <div className="login__state" id="email__state">
                         {this.state.emailState ? <Check className="checked checked__state" /> : <Error className="error error__state" />}
                     </div>
-
                 </div>
                         
                 <h2 className="login__title">CONTRASEÑA</h2>
@@ -75,7 +71,6 @@ export default class Login extends Component{
                     <div className="login__state" id="password__state">
                         {this.state.passwordState ? <Check className="checked checked__state" /> : <Error className="error error__state" />}
                     </div>
-
                 </div>
 
                 <Button className="login__button" onClick = {this.confirmUser} >INGRESAR</Button>
@@ -91,9 +86,7 @@ export default class Login extends Component{
                 <Link to="" className="login__footer-link" aria-label="Crear Cuenta">
                     <Button className="footer__link-button" >NO TENGO UNA CUENTA</Button>
                 </Link>
-
             </div>
-
         </div>
         )
     }

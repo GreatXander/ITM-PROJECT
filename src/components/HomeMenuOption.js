@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as RightArrow } from '../svgs/right-arrow.svg'
 import './HomeMenuOption.css'
 
@@ -69,13 +70,15 @@ export default class HomeMenuOption extends Component {
                         {this.props.optionInfo}
                     </div>
                     
-                    <div className="option__info-button"
-                    onMouseEnter={e => this.infoButton.handleIcon(true)}
-                    onMouseLeave={e => this.infoButton.handleIcon()}
-                    onClick={e => this.infoButton.handleIcon()}
-                    >
-                        <RightArrow className="info__button-icon" id={this.infoButton.iconId} />
-                    </div>
+                    <Link to={this.props.buttoname} className="info__button-container">
+                        <div className="option__info-button"
+                        onMouseEnter={e => this.infoButton.handleIcon(true)}
+                        onMouseLeave={e => this.infoButton.handleIcon()}
+                        onClick={e => this.infoButton.handleIcon()}
+                        >
+                            <RightArrow className="info__button-icon" id={this.infoButton.iconId} />
+                        </div>
+                    </Link>
                 </div>
             </div>
         )

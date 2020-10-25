@@ -19,11 +19,12 @@ export default class Header extends Component{
                     <h1 className="school__logo-title">ITM</h1>
                 </Link>
 
-                {this.props.user.hasOwnProperty('name')
+                {Object.keys(this.props.user).length > 0
                 ? 
                 <HeaderMenu /> : <HeaderSchoolTitle />}
                 
-                {this.props.user.hasOwnProperty('name') ? 
+                {Object.keys(this.props.user).length > 0 
+                ? 
                 <ProfileButton username={this.getUserName()}/>
                 :
                 <HeaderSession 

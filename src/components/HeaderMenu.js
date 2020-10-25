@@ -49,6 +49,7 @@ export default class HeaderMenu extends Component {
             </nav>
             
             <div className="menu__button-container"
+            id="menu__button"
             onClick={e => this.menu.handleOpeNClose(document.querySelector('.menu__container'))}>
                 <MenuButton className="menu__button" />
             </div>

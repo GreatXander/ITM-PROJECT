@@ -78,9 +78,13 @@
     color: white;
 }
 
+.info__button-container{
+    height: 15%;
+    width: 100%;
+}
 .option__info-button{
     display: flex;
-    height: 17%;
+    height: 100%;
     width: 100%;
     margin-top: auto;
     background: var(--div-color);
@@ -91,10 +95,6 @@
     margin: auto;
     width: 50px;
 }
-/*.info__button-title{
-    color: black;
-    cursor: pointer;
-}*/
 
 @media screen and (max-width: 399px){
     .home__menu-option{

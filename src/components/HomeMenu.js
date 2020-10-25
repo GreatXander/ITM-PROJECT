@@ -13,7 +13,7 @@ export default class HomeMenu extends Component {
         return (
             <div className="home__menu-container">
                 <HomeMenuOption 
-                buttoname="us__button" 
+                buttoname="nosotros" 
                 buttoncolor="var(--us-button)" 
                 icon={<Director className="home__menu-svg"/>} 
                 title="NOSOTROS" 
@@ -24,7 +24,7 @@ export default class HomeMenu extends Component {
                 }/>
 
                 <HomeMenuOption 
-                buttoname="offer__button" 
+                buttoname="oferta_academica" 
                 buttoncolor="var(--offer-button)" 
                 icon={<Pencil className="home__menu-svg"/>} 
                 title="OFERTAS" 
@@ -35,7 +35,7 @@ export default class HomeMenu extends Component {
                 }/>
 
                 <HomeMenuOption 
-                buttoname="community__button" 
+                buttoname="comunidad" 
                 buttoncolor="var(--community-button)" 
                 icon={<Community className="home__menu-svg"/>} 
                 title="COMUNIDAD" 
@@ -46,7 +46,7 @@ export default class HomeMenu extends Component {
                 }/>
 
                 <HomeMenuOption 
-                buttoname="teachers__button" 
+                buttoname="maestros" 
                 buttoncolor="var(--teachers-button)" 
                 icon={<Rule className="home__menu-svg"/>} 
                 title="MAESTROS" 
@@ -57,7 +57,7 @@ export default class HomeMenu extends Component {
                 }/>
 
                 <HomeMenuOption 
-                buttoname="library__button" 
+                buttoname="biblioteca" 
                 buttoncolor="var(--button-green)" 
                 isLast={true} 
                 icon={<BackPack className="home__menu-svg"/>}  
